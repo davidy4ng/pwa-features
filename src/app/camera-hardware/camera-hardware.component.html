@@ -13,7 +13,7 @@
 </div>
 <div class="row mb-2">
   <div class="col-12 col-md-4 offset-md-4 text-center">
-      <video *ngIf="videoCapable" #video1 width="300" autoplay class="has-picture"></video>
+      <video *ngIf="videoCapable" #video1 width="300" autoplay class="has-picture" playsinline webkit-playsinline="true"></video>
       <div *ngIf="!videoCapable">Access to camera denied</div>
   </div>
 </div>
